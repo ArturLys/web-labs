@@ -1,0 +1,5 @@
+curl -v -X GET http://localhost:8000/200 -o 200.jpg
+curl -v -X GET http://localhost:8000/429 -o 429.jpg
+curl -v -X PUT http://localhost:8000/100 --data-binary "@200.jpg"
+curl -v -X DELETE http://localhost:8000/100
+curl -v -X POST http://localhost:8000/200
